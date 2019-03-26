@@ -1,0 +1,195 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color:burlywood
+}
+
+
+
+/* top */
+.top{
+    height: 30px;
+    width: 100%;
+    background-color: gray;
+    font-size: 15px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.container::before,.container::after{
+    content: " ";
+    display: table;
+}
+.container::after{
+    clear: both;
+}
+.top-left{
+    float:left;
+    /* margin-left: 10%; */
+    height: 30px;
+    line-height:30px;  
+}
+.top-right{
+    float: right;
+    margin-right: 10;
+    height: 30px;
+    line-height:30px;
+   
+}
+.top-right a{
+    padding: 5px;
+}
+
+/* header */
+.header{
+    height:60px;
+    width:80%;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+.header-logo{
+    float: left;
+    margin:10px 10px 0 10px;
+}
+#day,.back{
+    font-size: 15px;
+    float: left;
+    height:60px;
+    line-height: 60px;
+    margin-right:10px;
+}
+
+#time{
+    font-size: 15px;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    
+}
+.music {
+    display: block;
+    float:right;
+    height: 35px;
+    width: 35px;
+    margin: 13px;
+    
+}
+.listen li{
+    float: right;
+    font-size:15px;
+    height: 60px;
+    line-height: 60px;
+}
+/* fun */
+.fun{
+    
+    width: 80%;
+    height:420px;
+    margin: 0 auto;
+    border: 1px solid gray;
+}
+.fun-head{
+    height:80px;
+    background: url(../image/cloud.png) no-repeat;
+    margin-right: 0；
+}
+.swiper-container {
+    width: 30%;
+    height: 280px;
+    float: left;
+  }
+.swiper-wrapper{
+    margin: 20px 0;
+}
+.slide1{
+    background: url(../image/movie.png) no-repeat;
+}
+.slide2{
+    background: url(../image/robot.png) no-repeat;
+}
+.slide3{
+    background: url(../image/stock.png) no-repeat;
+}
+.information{
+    margin-top: 260px;
+    width: 30%;
+    height: 70px;
+    
+}
+.information p,.information a{
+    display: block;
+    font-size: 15px;
+    text-align: center;
+}
+/* fun另外两部分 */
+.funn{
+    margin-top: -310px;
+    float: right;
+    width: 60%;
+    height: 310px;
+}
+.funn li{
+    width:32%;
+    height: 305px;
+    float:right;
+}
+.funn li{
+    width:33%;
+    height: 305px;
+    float:right;
+    margin:5px 50px;
+}
+.song p,.song a{
+    display: block;
+    font-size: 15px;
+    text-align: center;
+}
+.books p,.books a{
+    display: block;
+    font-size: 15px;
+    text-align: center;
+}
+/* note */
+.note{
+    width: 80%;
+    height: 150px;
+    background-color: antiquewhite;
+    margin: 30px  auto;
+}
+.nott{
+    margin:20px 0;
+    padding-top: 5px;
+    border:none;
+    height: 80px;
+    width: 40%;
+    border-radius: 10px;
+    border: 1px solid  rgb(170, 167, 167);
+    letter-spacing: 2px;
+    font-size: 15px;
+
+}
+
+button{
+    position: relative;
+    top: -35px;
+    width: 60px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(159, 198, 235);
+}
+button:hover{
+    border:1px solid gray;
+    background-color: rgb(243, 174, 91);
+    color: black
+}

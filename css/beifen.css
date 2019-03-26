@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color:burlywood
+}
+ul{
+    list-style: none;
+}
+/* top */
+.top{
+    height: 30px;
+    background-color: gray;
+    font-size: 15px;
+}
+.container{
+    width: 1024px;
+    margin: 0 auto;
+}
+.container::before,.container::after{
+    content: " ";
+    display: table;
+}
+.container::after{
+    clear: both;
+}
+.top-left{
+    float:left;
+    height: 30px;
+    line-height:30px;
+
+   
+}
+.top-right{
+    float: right;
+    height: 30px;
+    line-height:30px;
+   
+}
+.top-right a{
+    padding: 5px;
+}
+
+/* header */
+.header{
+    height:60px;
+    width:76%;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+.header-logo{
+    float: left;
+    margin:10px 10px 0 10px;
+}
+#day,.back{
+    font-size: 15px;
+    float: left;
+    height:60px;
+    line-height: 60px;
+    margin-right:10px;
+}
+
+#time{
+    font-size: 15px;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    
+}
+.music {
+    display: block;
+    float:right;
+    height: 35px;
+    width: 35px;
+    margin: 13px;
+    
+}
+.icon-radio{
+    float: right;
+    font-size: 20px;
+    color:rgb(228, 133, 78);
+    height: 60px;
+    line-height: 60px;
+
+}
+/* fun */
+.fun{
+    border: 1px solid black;
+    width: 76%;
+    height:500px;
+    margin: 0 auto;
+}
+.fun-head{
+    height:80px;
+    background: url(../image/cloud.png) no-repeat;
+    margin-right: 0；
+}
+.swiper-container {
+    width: 350px;
+    height: 280px;
+    float: left;
+  }
+.swiper-wrapper{
+    margin: 20px 0;
+}
+.slide1{
+    background: url(../image/movie.png) no-repeat;
+}
+.slide2{
+    background: url(../image/robot.png) no-repeat;
+}
+.slide3{
+    background: url(../image/stock.png) no-repeat;
+}
+.information{
+    margin-top: 260px;
+    width: 349px;
+    height: 70px;
+    border: 1px solid cornflowerblue;
+    
+}
+.information p,.information a{
+    display: block;
+    font-size: 15px;
+    text-align: right;
+}
+    
