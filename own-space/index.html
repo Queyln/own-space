@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自留地</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+    <link rel="stylesheet" href="css/font/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+</head>
+<body  onload="startTime()">
+    <!-- top -->
+    <div class="top">
+        <div class="container">
+            <div class="top-left">
+               <p>自留地 | 欢迎回家 <span class=" iconfont icon-home"></span></p>
+
+            </div>
+            <div class="top-right">
+                <a href="load.html">注册</a>
+                <a href="load.html">登陆</a>
+                <a href="">退出<span class=" iconfont icon-fly"></span></a>
+            </div>
+            
+        </div>
+    </div>
+    <!-- header  -->
+    <div class="header">
+        <!-- <div class="container"> -->
+        <div class="header-logo">
+            <img src="image/zepto.png" alt="" width="40px" height="40px">
+        </div>
+        <div class="header-date">
+            <p id="day"></p>
+            <div class="back"> 返航</div>
+            <p id="time"></p>
+            <script src="js/date.js"></script>
+        </div>
+        <ul class="listen">
+            <li><dfn title="收听《Wiser》"><audio src="Wiser.ogg" controls="controls" type="ogg" class="music"></audio></dfn></li>
+            
+            <li><span class=" iconfont icon-radio" style="font-size:15px;color:rgb(228, 133, 78);">&nbsp收听</span></li>
+
+        </ul>
+            
+        <!-- </div> -->
+    </div>
+    <!-- fun -->
+    <div class="fun">
+        <div class="fun-head"> </div>
+        <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slide1" style="color:rgb(247, 115, 39)">L'amica geniale</div>
+                  <div class="swiper-slide slide2" style="color:rgb(247, 115, 39)">Love,Death&Robots</div>
+                  <div class="swiper-slide slide3" style="color:rgb(247, 115, 39)">Lock,Stock and Two Smoking</div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next" style="position:absolute;top:180px;"></div>
+                <div class="swiper-button-prev" style="position:absolute;top:180px;"></div>
+            
+              <!-- Swiper JS -->
+              <script src="js/swiper.min.js"></script>
+            
+              <!-- Initialize Swiper -->
+              <script>
+                var swiper = new Swiper('.swiper-container', {
+                  navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                  },
+                });</script>       
+        </div>
+        <div class="information">
+            <p><strong>影视&nbsp&nbsp</strong></p>
+            <a href="https://movie.douban.com/" target="_blank"><span class=" iconfont icon-movie" style="color:cornflowerblue"></span>&nbsp挑选喜欢的影片</a>
+        </div>
+        <ul class="funn">
+               <li class="books">
+                <img src="image/book.png" alt="">
+                <p class><strong>书&nbsp&nbsp</strong></p>
+                <a href="https://book.douban.com/" target="_blank"><span class=" iconfont icon-book" style="color:cornflowerblue;text-align:left;"></span>&nbsp挑选喜欢的书</a>
+                
+               </li>
+               <li class="song" >
+                <img src="image/music.png" alt="">
+                <p><strong>音乐&nbsp&nbsp</strong></p>
+                <a href="https://music.163.com/" target="_blank"><span class=" iconfont icon-radio" style="color:cornflowerblue;text-align:left;"></span>&nbsp挑选喜欢的音乐</a>
+               </li>
+        </ul>
+        </div>
+    </div>
+    <!-- note -->
+    <div class="note">
+        <textarea  class="nott">关于今天……</textarea>
+        <button ><p>留言</p></button>
+
+    </div>
+
+</body>
+</html> 

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="sign in and sign up" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自留地</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+    <link rel="stylesheet" href="css/load.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div id="top" class="box-head">
+                <a href="#" class="active" onclick="changel()">登陆</a>
+                <a href="#" onclick="changer()">注册</a>
+            </div>
+            <div id="info">
+                <div class="user" >
+                    <form style="padding-left:10px">
+                        <label for="user-name">邮箱：</label>
+                        <input type="text" >
+                        <br/>
+                        <label for="user-password">密码：</label>
+                        <input type="password" >
+                    </form>
+                    <button class="btn " >登录</button>
+                    <button class="dark" >注册</button>
+                </div>
+            </div>
+           
+            <div class="alarm">
+                    <a href="#">忘记密码？</a><span>| &nbsp</span>
+                    <a href="#">找回账号</a>
+            </div>
+
+        </div>
+    </div>
+<script>
+    function changel(){
+        var top=document.getElementById("top").getElementsByTagName("a");
+        var btn=document.getElementById("info").getElementsByTagName("button");
+        top[0].className="active";
+        top[1].className=" ";
+        btn[0].className="btn";
+        btn[1].className="dark";
+    }
+    function changer(){
+        var top=document.getElementById("top").getElementsByTagName("a");
+        var btn=document.getElementById("info").getElementsByTagName("button");
+        top[0].className=" ";
+        top[1].className="active";
+        btn[0].className="dark";
+        btn[1].className="btn";
+    }
+</script>    
+</body>
+</html>
