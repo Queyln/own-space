@@ -18,8 +18,8 @@
 
             </div>
             <div class="top-right">
-                <a href="">注册</a>
-                <a href="">登陆</a>
+                <a href="load.html">注册</a>
+                <a href="load.html">登陆</a>
                 <a href="">退出<span class=" iconfont icon-fly"></span></a>
             </div>
             
@@ -35,7 +35,7 @@
             <p id="day"></p>
             <div class="back"> 返航</div>
             <p id="time"></p>
-            <script src="js/date.js"></script>
+            
         </div>
         <ul class="listen">
             <li><dfn title="收听《Wiser》"><audio src="Wiser.ogg" controls="controls" type="ogg" class="music"></audio></dfn></li>
@@ -94,8 +94,32 @@
     <div class="note">
         <textarea  class="nott">关于今天……</textarea>
         <button ><p>留言</p></button>
+        <img src="image/zeptoo.png" alt="byebye" >
 
     </div>
+<script>
+var d=new Date();
+document.getElementById("day").innerHTML=d.toLocaleDateString();
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('time').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
 
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+
+</script>
 </body>
 </html> 

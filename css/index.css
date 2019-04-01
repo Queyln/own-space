@@ -61,6 +61,7 @@ a:hover{
     float: left;
     margin:10px 10px 0 10px;
 }
+
 #day,.back{
     font-size: 15px;
     float: left;
@@ -92,7 +93,7 @@ a:hover{
 }
 /* fun */
 .fun{
-    
+    background-color: antiquewhite;
     width: 80%;
     height:420px;
     margin: 0 auto;
@@ -123,52 +124,41 @@ a:hover{
 .information{
     margin-top: 260px;
     width: 30%;
-    height: 70px;
-    
+    height: 70px;   
 }
 .information p,.information a{
     display: block;
     font-size: 15px;
+    padding-top: 10px;
     text-align: center;
 }
 /* fun另外两部分 */
-.funn{
-    margin-top: -310px;
-    float: right;
-    width: 60%;
-    height: 310px;
-}
 .funn li{
-    width:32%;
+    width:30%;
     height: 305px;
     float:right;
+    margin-left: 40px;
+    position: relative;
+    top: -300px;
 }
-.funn li{
-    width:33%;
-    height: 305px;
-    float:right;
-    margin:5px 50px;
-}
-.song p,.song a{
+.books p,.books a,.song p,.song a{
     display: block;
     font-size: 15px;
-    text-align: center;
-}
-.books p,.books a{
-    display: block;
-    font-size: 15px;
+    padding-top: 10px;
     text-align: center;
 }
 /* note */
 .note{
     width: 80%;
-    height: 150px;
+    height: 180px;
     background-color: antiquewhite;
     margin: 30px  auto;
+    position: absolute;
+    left: 10%;
 }
 .nott{
-    margin:20px 0;
-    padding-top: 5px;
+    position: relative;
+    margin-left:  40px;
     border:none;
     height: 80px;
     width: 40%;
@@ -181,7 +171,8 @@ a:hover{
 
 button{
     position: relative;
-    top: -35px;
+    top: -30px;
+    margin-right: 300px;
     width: 60px;
     height: 40px;
     border: none;
