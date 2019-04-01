@@ -11,7 +11,7 @@
 </head>
 <body  onload="startTime()">
     <!-- top -->
-    <div class="top">
+    <div class="top" id="top1">
         <div class="container">
             <div class="top-left">
                <p>自留地 | 欢迎回家 <span class=" iconfont icon-home"></span></p>
@@ -26,7 +26,7 @@
         </div>
     </div>
     <!-- header  -->
-    <div class="header">
+    <div  id="headfix" class="header">
         <!-- <div class="container"> -->
         <div class="header-logo">
             <img src="image/zepto.png" alt="" width="40px" height="40px">
@@ -94,9 +94,10 @@
     <div class="note">
         <textarea  class="nott">关于今天……</textarea>
         <button ><p>留言</p></button>
-        <img src="image/zeptoo.png" alt="byebye" >
+        <div class="bye"><a href="#top1"><dfn title="Top"><img src="image/zeptoo.png" alt="byebye" onclick="totop()" ></dfn></a></div>
 
     </div>
+
 <script>
 var d=new Date();
 document.getElementById("day").innerHTML=d.toLocaleDateString();
@@ -118,6 +119,17 @@ function checkTime(i)
 if (i<10) 
   {i="0" + i}
   return i
+}
+// 固定导航栏
+var headfix=document.getElementById("headfix");
+window.onscroll=function(){
+    var scrollTop=document.documentElement.scrollTop;
+    if(scrollTop>=31){
+        headfix.className="header fixed";
+    }else{
+        headfix.className="header"; 
+    }
+    console.log(scrollTop);
 }
 
 </script>
